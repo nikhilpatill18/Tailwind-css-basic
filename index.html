@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twaildcss
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- NAVbaar -->
+    <nav class="p-3 flex bg-white justify-between items-center sticky top-0 left-0 right-0 z-10">
+        <a href="#" class=" flex gap-2 items-center"> <img class="object-cover max-w-12 max-h-12" src="asset 0.png"
+                alt="brand">
+            <span class="text-2xl">ToDesktop</span>
+        </a>
+        <div class=" hidden lg:flex gap-12">
+            <a href="#" class="font-medium bold hover:text-blue-700 text-black g-4">Docs</a>
+            <a href="#" class="font-medium bold hover:text-blue-700 text-black g-4">Pricing</a>
+            <a href="#" class="font-medium bold hover:text-blue-700 text-black g-4">Changelog</a>
+            <a href="#" class="font-medium bold hover:text-blue-700 text-black g-4">Blogs</a>
+            <a href="#" class="font-medium bold hover:text-blue-700 text-black g-4">Login</a>
+        </div>
+        <button
+            class="hidden lg:flex g-2 items-center px-3 py-3 border rounded-lg border-gray-400  hover:border-gray-900"><span>Electron
+                developer</span> <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="p-2 lg:hidden" onclick="HandleMenu()"> <i class="fa-solid fa-bars text-gray-600 "></i></button>
+        <div id="navDailog" class=" hidden lg:hidden z-10 fixed  bg-white inset-0 p-3">
+            <div id=" nav-baar" class="flex  justify-between">
+                <a href="#" class=" flex gap-2 items-center"> <img class="object-cover max-w-12 max-h-12"
+                        src="asset 0.png" alt="brand">
+                    <span class="text-2xl">ToDesktop</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="HandleMenu()"> <i
+                        class="fa-solid fa-xmark text-gray-600 "></i></button>
+
+            </div>
+            <div class=" mt-6 ">
+                <a href="#" class="font-medium bold m-10 p-3 hover:bg-gray-100 text-black g-4 block">Pricing</a>
+                <a href="#" class="font-medium bold m-10 p-3 hover:bg-gray-100 text-black g-4 block">Docs</a>
+                <a href="#" class="font-medium bold m-10 p-3 hover:bg-gray-100 text-black g-4 block">Changelog</a>
+                <a href="#" class="font-medium bold m-10 p-3 hover:bg-gray-100 text-black g-4 block">Blogs</a>
+                <a href="#" class="font-medium bold m-10 p-3 hover:bg-gray-100 text-black g-4 block">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- main -->
+    <main>
+        <div id="hero" class="  min-h-screen bg-gradient-to-b from-purple-100 via-grey-100 to-transparent">
+            <div id="hero-container"
+                class="max-w-4xl mx-auto px-6 pt-6 pb-16 flex flex-col sm:items-center sm:text-center sm:pt-12 sm:max-w-2xl ">
+                <div id="version-text "
+                    class=" flex   items-center  border border-yellow-300 rounded-lg bg-yellow-50 w-fit px-3 py-1 my-6 g-2 shadow-md hover:shadow-lg hover:-translate-y-2 transition group ">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full m-2"></div>
+                    <p class="text-yellow-600 font-medium">v0.21.1: <span class="text-orange-900">Find-in-page bug
+                            fixes</span>
+                    </p>
+                    <div id="arrow" class="font-bold text-yellow-500 m-2"><i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-2 transition"></i></div>
+                </div>
+                <div class="hidden sm:flex ">
+                    <div id="option" class="flex justify-center items-center">
+                        <i class="fa-regular fa-paste mx-2" class=""></i>
+                        <p class="mx-2">Code optional</p>
+                    </div>
+                    <div id="drag" class="flex justify-center items-center">
+                        <i class="fa-solid fa-hand-back-fist mx-2"></i>
+                        <p class="mx-2">Drag & drop builder</p>
+                    </div>
+                    <div id="window" class="flex justify-center items-center">
+                        <i class="fa-solid fa-laptop-code mx-2"></i>
+                        <p class="mx-2">Windows, Mac, Linux</p>
+                    </div>
+
+                </div>
+                <p class="text-4xl font-semibold leading-snug text-black mt-5  sm:text-6xl">Web app to desktop app in
+                    minutes</p>
+                <p class="text-xl font-normal text-gray-800 mt-4 sm:text-2xl sm:mt-8  sm:w-50">Take your web app
+                    codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <div id="butoon" class=" flex g-4 flex-col mt-12 sm:flex-row">
+                    <button class=" bg-blue-600 text-white px-8 py-3 rounded-lg text-xl mt-10 text-center ">Download
+                        Now</button>
+                    <button
+                        class=" bg-white text-black border border-gray-700 mx-8  px-8 py-3 rounded-lg text-xl mt-10 text-center">Read
+                        docs</button>
+                </div>
+            </div>
+            <div id="companined-conatiner" class=" flex flex-col gap-20 md:gap-50">
+                <div id="companies-title" class="flex justify-center gap-2">
+                    <img class="translate-y-3"
+                        src="https://raw.githubusercontent.com/Anuj-Kumar-Sharma/tailwind-landing-page/dd42eb1bc9884bc3b55e9fbea70145d7e15ea66a/assets/asset%202.svg"
+                        alt="">
+                    <span class="font-medium text-red">Apps Powered by todesktop</span>
+                    <img class=" -scale-x-100 translate-y-3"
+                        src="https://raw.githubusercontent.com/Anuj-Kumar-Sharma/tailwind-landing-page/dd42eb1bc9884bc3b55e9fbea70145d7e15ea66a/assets/asset%202.svg"
+                        alt="">
+
+                </div>
+                <div id="companies-line-group" class=" flex flex-col gap-4 mt-10 ">
+                    <div id="line1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear ">
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-h-32 md:min-w-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                    </div>
+                    <div id="line2" class="flex gap-4  w-screen -translate-x-36 transition-transform ease-linear">
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                    </div>
+                    <div id="line3"
+                        class="flex md:hidden gap-5  w-screen  -translate-x-48 transition-transform ease-linear">
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32 ">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl  md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                        <div
+                            class="flex flex-col min-w-24 m-h-24 items-center justify-center bg-white border border-gray-500 rounded-xl md:min-w-32 md:min-h-32">
+                            <img class="w-12 h-12 md:h-16 md:w-16"
+                                src="https://github.com/Anuj-Kumar-Sharma/tailwind-landing-page/blob/master/assets/asset%203.png?raw=true"
+                                alt="">
+                            <span class="text-[14px] md:text-[16px]">Bounce</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--step by step  -->
+            <div id="steps" class="flex mt-10 gap-8 flex-col">
+                <h1 class="font-medium text-5xl "> <span class="px-2 py-1 text-center">How it works</span></h1>
+                <div class="flex  m-5 border rounded-lg border-gray-400 ">
+                    <!-- adding step 1 -->
+
+                    <div id="step-1" class="flex flex-col p-10 gap-4 md:flex-row ">
+                        <div class="flex gap-4 flex-col">
+                            <span
+                                class="border ml-5 px-3 w-fit py-1 text-center border-yellow-300 rounded-md font-medium text-yellow-600 bg-yellow-50 shadow-lg shadow-blue-100">
+                                Step 1
+                            </span>
+                            <span class="mt-5">
+                                <h3 class="text-4xl font-semibold font-sans">Bootstrap straight from your web app</h3>
+                            </span>
+                            <p>Copy and paste your web app url into ToDesktop. Customise your app design, app icon and
+                                window frame UI with no code.</p>
+                            <ul class="grid grid-cols-2 gap-2">
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div><img class="w-fit"
+                                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg">
+                        </div>
+                    </div>
+                    <!-- done step-1 -->
+
+
+                </div>
+                <!-- step 2-bpx -->
+                <div class="flex  m-5 border rounded-lg border-gray-400 ">
+                    <!-- adding step 2 -->
+
+                    <div id="step-1" class="flex flex-col p-10 gap-4 md:flex-row ">
+                        <div class="flex gap-4 flex-col">
+                            <span
+                                class="border ml-5 px-3 w-fit py-1 text-center border-yellow-300 rounded-md font-medium text-yellow-600 bg-yellow-50 shadow-lg shadow-blue-100">
+                                Step 2
+                            </span>
+                            <span class="mt-5">
+                                <h3 class="text-4xl font-semibold font-sans">Bootstrap straight from your web app</h3>
+                            </span>
+                            <p>Copy and paste your web app url into ToDesktop. Customise your app design, app icon and
+                                window frame UI with no code.</p>
+                            <ul class="grid grid-cols-2 gap-2">
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div><img class="w-fit"
+                                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg">
+                        </div>
+                    </div>
+                    <!-- done step-2 -->
+
+
+                </div>
+                <!-- step 3 box -->
+                <div class="flex  m-5 border rounded-lg border-gray-400 ">
+                    <!-- adding step 3 -->
+
+                    <div id="step-1" class="flex flex-col p-10 gap-4 md:flex-row ">
+                        <div class="flex gap-4 flex-col">
+                            <span
+                                class="border ml-5 px-3 w-fit py-1 text-center border-yellow-300 rounded-md font-medium text-yellow-600 bg-yellow-50 shadow-lg shadow-blue-100">
+                                Step 3
+                            </span>
+                            <span class="mt-5">
+                                <h3 class="text-4xl font-semibold font-sans">Bootstrap straight from your web app</h3>
+                            </span>
+                            <p>Copy and paste your web app url into ToDesktop. Customise your app design, app icon and
+                                window frame UI with no code.</p>
+                            <ul class="grid grid-cols-2 gap-2">
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                                <li class="flex gap-4">
+                                    <i class="fa-solid fa-check"></i>
+                                    <a href="#"
+                                        class="text-lg border-b border-black border-opacity-15 hover:border-opacity-35">Multiple
+                                        window</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div><img class="w-fit"
+                                src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2066.svg">
+                        </div>
+                    </div>
+                    <!-- done step-3-->
+
+
+                </div>
+
+            </div>
+            <div id="conatiner-2" class="flex gap-8 mt-5 p-8 flex-col">
+                <span class="w-4xl">
+                    <h1 class="font-semibold text-5xl">ToDesktop handle the details</h1>
+                </span>
+                <div class="flex flex-col md:grid md:grid-cols-3 items-center justify-center gap-4 p-20">
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 min-h-25 md:h-[200px] min-w-20 gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50 ">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2037.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 min-h-25 md:h-[400px]  max-w-[320px] gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <p class="text-1xp font-normal text-center">We’ll ensure the underlying browser is up to date
+                            and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2038.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 min-h-25 md:h-[200px]  max-w-[320px] gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2039.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 max-h-[600px] md:h-[300px]  max-w-[320px] gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <p class="text-1xp font-normal text-center">We’ll ensure the underlying browser is up to date
+                            and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2040.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 max-h-[400px] md:h-[200px]  max-w-[320px] gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2037.png"
+                            alt="">
+                    </div>
+                    <div
+                        class="flex flex-col border border-gray-150 rounded-lg justify-center items-center bg-gray-250 max-h-[600px] md:h-[400px] max-w-[320px] gap-3 mt-5 hover:bg-gradient-to-tl from-pink-000 via-gray-50 to-yellow-50">
+                        <h3 class="text-2xl font-light text-center">Native Notification</h3>
+                        <p class="text-1xp font-normal text-center">We’ll ensure the underlying browser is up to date
+                            and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="https://anuj-kumar-sharma.github.io/tailwind-landing-page/assets/asset%2038.png"
+                            alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer class="p-8 h-[200px] bg-black w-screen flex flex-col">
+        <div class="icon flex align-middle justify-center gap-10 ">
+            <div class="i1 text-white"><a href="#"><i
+                        class="fa-brands fa-facebook hover:shadow-white shadow-sm"></i></a></div>
+            <div class="i1 text-white"><a href="https://www.linkedin.com/in/nikhil-patil-a673b6317/"><i
+                        class="fa-brands fa-linkedin  hover:shadow-white shadow-sm"></i></a></div>
+            <div class="i1 text-white"><a href="https://github.com/nikhilpatill18"><i
+                        class="fa-brands fa-github  hover:shadow-white shadow-sm"></i></a></div>
+            <div class="i1 text-white"><a href="https://www.instagram.com/nikhill_18_/"><i
+                        class="fa-brands fa-instagram  hover:shadow-white shadow-sm"></i></a></div>
+        </div>
+        <div class="rights">
+            <p class="text-white text-center mt-10 p-5 "><i class="fa-solid fa-copyright"></i> All
+                Right Reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
